@@ -38,5 +38,9 @@
             $(this).removeClass("floating-label-form-group-with-focus");
         });
     });
+    $('.modal').on('hide.bs.modal', function() {
+        var memory = $(this).html();
+        $(this).html(memory);
+    });
 
 })(jQuery); // End of use strict

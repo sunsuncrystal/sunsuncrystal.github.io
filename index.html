@@ -433,9 +433,22 @@
                                 <li><strong> Song name </strong> Sunny is on the second row, right 1.
                                 </li>
                             </ul>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/NQjcYt9-nEE?si=RaOn7IyyTa6Nq3KD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+							<ul class="list-inline item-details">
+                                <li>Date:
+                                    <strong>Feb 2017
+                                    </strong>
+                                </li>
+                                <li><strong> Song name </strong> Sunny's first Chinese dance.
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                    $('.modal').on('hide.bs.modal', function() {
+   					  var memory = $(this).html();
+     				$(this).html(memory);
+					});
                 </div>
             </div>
         </div>
